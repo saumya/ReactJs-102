@@ -8,13 +8,19 @@ import Container from '@material-ui/core/Container';
 
 import Button from '@material-ui/core/Button';
 
+import AppConfig from './AppConfig';
+
 function App() {
+
+  console.log('process.env.NODE_ENV=',process.env.NODE_ENV);
 
   function getWeatherInfo(){
     console.log('getWeatherInfo');
-    const wCity = 'Bhubaneswar'
-    const wAppID = 'yourApiKeyHERE';
-    const wURL = 'https://api.openweathermap.org/data/2.5/weather?q='+wCity+'&APPID='+wAppID+'&units=metric';
+
+    const wCity = 'Bhubaneswar';
+    const appConfig = AppConfig();
+    const wURL = appConfig.api.weather.wURL+'&q='+ wCity +'&units=metric';
+    
     //fetch(wURL).then(function(){}).catch(function(){});
     fetch(wURL).then(function(result){
       //console.log(result);
