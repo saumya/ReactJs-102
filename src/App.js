@@ -3,17 +3,17 @@ import React from 'react';
 import './App.css';
 
 import CssBaseline from '@material-ui/core/CssBaseline';
+/*
 import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
-
 import Button from '@material-ui/core/Button';
-
+*/
 import AppConfig from './AppConfig';
 import WeatherComp from './comps/Weather.comp';
 
 function App() {
 
-  console.log('process.env.NODE_ENV=',process.env.NODE_ENV);
+  //console.log('process.env.NODE_ENV=',process.env.NODE_ENV);
 
   function getWeatherInfo(){
     console.log('getWeatherInfo');
@@ -67,18 +67,8 @@ function App() {
         </div>
       */}
 
-      <Container maxWidth="sm">
-        <Typography component="div" style={{ backgroundColor: '#cfe8fc', height: '40vh' }} variant="h3">
-          Welcome to weather now.
-        </Typography>
+        <WeatherComp apiFrom='Open Weather' getWeatherInfo={getWeatherInfo} />
         
-        <Button color="primary" size="medium" variant="contained" onClick={ getWeatherInfo }>
-          Get Weather info
-        </Button>
-
-        <WeatherComp apiFrom='Open Weather' />
-        
-      </Container>
     </React.Fragment>
   );
 }
