@@ -9,6 +9,7 @@ import Container from '@material-ui/core/Container';
 import Button from '@material-ui/core/Button';
 
 import AppConfig from './AppConfig';
+import WeatherComp from './comps/Weather.comp';
 
 function App() {
 
@@ -74,6 +75,8 @@ function App() {
         <Button color="primary" size="medium" variant="contained" onClick={ getWeatherInfo }>
           Get Weather info
         </Button>
+
+        <WeatherComp apiFrom='Open Weather' />
         
       </Container>
     </React.Fragment>
