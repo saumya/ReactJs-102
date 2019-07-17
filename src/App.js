@@ -1,6 +1,6 @@
 import React from 'react';
 //import logo from './logo.svg';
-//import './App.css';
+import './App.css';
 
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Typography from '@material-ui/core/Typography';
