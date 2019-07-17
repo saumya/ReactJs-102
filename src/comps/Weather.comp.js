@@ -47,7 +47,7 @@ function WeatherComp(props){
         <React.Fragment>
             <div className='compWeather'>WeatherComp using {props.apiFrom}.</div>
             <Container maxWidth="sm">
-                <Typography component="div" style={{ backgroundColor: '#cfe8fc', height: '40vh' }} variant="h3">
+                <Typography component="div" style={{ backgroundColor: '#cfe8fc', height: '20vh' }} variant="h3">
                 Welcome to weather now.
                 </Typography>
                 
