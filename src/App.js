@@ -3,11 +3,7 @@ import React from 'react';
 import './App.css';
 
 import CssBaseline from '@material-ui/core/CssBaseline';
-/*
-import Typography from '@material-ui/core/Typography';
-import Container from '@material-ui/core/Container';
-import Button from '@material-ui/core/Button';
-*/
+
 import AppConfig from './AppConfig';
 import WeatherComp from './comps/Weather.comp';
 

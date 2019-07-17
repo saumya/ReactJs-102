@@ -9,10 +9,11 @@ import Button from '@material-ui/core/Button';
 function WeatherComp(props){
 
     //console.log('WeatherComp: process.env.NODE_ENV=',process.env.NODE_ENV);
+    //console.log('WeatherComp: props',props);
 
     function getWeatherInfo(){
         console.log('WeatherComp:getWeatherInfo');
-    
+
         const wCity = 'Bhubaneswar';
         //const appConfig = props.appConfig;
         //const wURL = appConfig.api.weather.wURL+'&q='+ wCity +'&units=metric';
